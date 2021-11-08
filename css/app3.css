@@ -1,0 +1,55 @@
+html {
+  min-height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  min-height: 100%;
+  padding-bottom: 5rem;
+  background-image: url("../img/Fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.titulo {
+  font-weight: bold;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: white;
+}
+.container {
+    background-color: rgb(207, 207, 207);
+}
+header {
+  margin-top: 3rem;
+}
+header h1 {
+  color: white;
+}
+.lista-reservas .reserva {
+  border-bottom: 1px solid #e1e1e1;
+  padding: 2rem;
+  padding-bottom: 3rem;
+  
+}
+.lista-reservas .reserva:last-of-type {
+  border-bottom: 0;
+}
+
+.lista-reservas .reserva p {
+  margin:0;
+}
+.lista-reservas .reserva button {
+  margin-top: 1rem!important;
+}
+.lista-reservas .reserva span {
+  font-weight: bold;
+}
+textarea {
+    height: 200px!important;
+}
+
+svg {
+  width: 21px;
+}

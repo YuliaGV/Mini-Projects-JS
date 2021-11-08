@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buscador de inmuebles</title>
+    <link type="text/css" rel="stylesheet" href="css/tailwind.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">  
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/app1.css">
+</head>
+<body>
+
+    <h1>Buscador de inmuebles</h1>
+
+    <div class="contenedor">
+
+        <p class ="text-center">Un buscador con múltiples filtros</p>
+        <p class="text-center"><a href="index.html">Volver a la lista de mini-projects</a></p>
+        
+
+        <form id="buscador">
+            <div class="row">
+                <div class="three columns">
+                    <label for="locat">Ubicación</label>
+                    <select class="u-full-width" id="locat">
+                        <option value="">Seleccione</option>
+                        <option value="Bello">Bello</option>
+                        <option value="Envigado">Envigado</option>
+                        <option value="Itagui">Itaguí</option>
+                        <option value="Medellin">Medellín</option>
+                        <option value="Sabaneta">Sabaneta</option>
+                    </select>
+                </div>
+                <div class="three columns">
+                    <label for="strat">Estrato</label>
+                    <select class="u-full-width" id="strat">
+                            <option value="">Seleccione</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                    </select>
+                </div>
+                <div class="three columns">
+                    <label for="minprice">Precio Min</label>
+                    <select class="u-full-width" id="minprice">
+                            <option value="">Seleccione</option>
+                            <option value="50000000">50'000,000</option>
+                            <option value="80000000">80'000,000</option>
+                            <option value="100000000">100'000,000</option>
+                            <option value="125000000">125'000,000</option>
+                            <option value="150000000">150'000,000</option>
+                            <option value="200000000">200'000,000</option>
+                            <option value="250000000">250'000,000</option>
+                            <option value="300000000">300'000,000</option>
+                    </select>
+                </div>
+                <div class="three columns">
+                    <label for="maxprice">Precio Max</label>
+                    <select class="u-full-width" id="maxprice">
+                            <option value="">Seleccione</option>
+                            <option value="100000000">100'000,000</option>
+                            <option value="150000000">150'000,000</option>
+                            <option value="200000000">200'000,000</option>
+                            <option value="300000000">300'000,000</option>
+                            <option value="600000000">600'000,000</option>
+                            <option value="750000000">750'000,000</option>
+                            <option value="900000000">900'000,000</option>
+                            <option value="1500000000">1500'000,000</option>
+                    </select>
+                </div>
+            </div>
+                
+                <div class="row">
+                    <div class="three columns">
+                        <label for="minarea">Area Min (m²)</label>
+                        <select class="u-full-width" id="minarea">
+                                <option value="">Seleccione</option>
+                                <option value="50">50</option>
+                                <option value="60">60</option>
+                                <option value="80">80</option>
+                                <option value="100">100</option>
+                                <option value="125">125</option>
+                                <option value="150">150</option>
+                                <option value="200">200</option>
+                                <option value="300">300</option>
+                        </select>
+                    </div>
+                    <div class="three columns">
+                        <label for="maxarea">Area Max (m²)</label>
+                        <select class="u-full-width" id="maxarea">
+                            <option value="">Seleccione</option>
+                            <option value="100">100</option>
+                            <option value="150">150</option>
+                            <option value="200">200</option>
+                            <option value="250">250</option>
+                            <option value="300">300</option>
+                            <option value="350">350</option>
+                            <option value="500">500</option>
+                            <option value="700">700</option>
+                        </select>
+                    </div>
+
+                    <div class="three columns">
+                        <label for="rooms">Habitaciones</label>
+                        <select class="u-full-width" id="rooms">
+                                <option value="">Seleccione</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="three columns">
+                        <label for="bathrooms">Baños</label>
+                        <select class="u-full-width" id="bathrooms">
+                                <option value="">Seleccione</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+        <h1>Resultados</h1>
+        <div id="resultado"></div>
+    </div>
+
+    <script src="js/db_app1.js"></script>
+    <script src="js/app1.js"></script>
+    
+</body>
+</html>

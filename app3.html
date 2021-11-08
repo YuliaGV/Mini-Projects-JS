@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reserva tu mesa</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/app3.css">
+</head>
+<body>
+    <h2 class="text-center my-4 titulo">Reserva en PuntoAR</h2>
+    <div class="container mt-5 p-5">
+        <div id="contenido" class="row">
+            <div class="col-md-6 agregar-reserva">
+                <form id="nueva-reserva">
+                    <h3 id="administra" class="mb-4 text-center">Datos de la reserva</h3>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Nombre</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="text" id="nombre" name="nombre" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Correo:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="text" id="correo" name="correo" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Teléfono:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="tel" id="telefono" name="telefono" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Fecha:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="date" id="fecha" name="fecha" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Hora:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="time" id="hora" name="hora" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Cantidad de personas:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="number" id="personas" name="personas" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Comentario(opcional):</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <textarea class="form-control" id="comentario" name="comentario" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                            <button type="submit" class="btn btn-primary w-100 d-block">Crear Reserva</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h3 id="administra" class="mb-4  text-center">Administra tus reservas</h3>
+                <ul id="reservas" class="list-group lista-reservas"></ul>
+            </div>
+        </div> <!--.row-->
+        <p class="text-center"><a href="index.html">Volver a la lista de mini-projects</a></p>
+    </div><!--.container-->
+
+    <script src="js/app3/app.js" type="module"></script>
+
+</body>
+</html>
